@@ -1,5 +1,6 @@
 package org.java.lessons.javapalindrome;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 //Snack8
@@ -9,15 +10,21 @@ public class SnackEight {
         //Inizializzamo il nostro scanner
         Scanner scanNumber = new Scanner(System.in);
 
+        //Inizializzamo una variabile per la somma dei numeri
+        int somma = 0;
+
         //Chidiamo all'utente un numero di 4 cifre
         System.out.println("Inserisci un numero di 4 cifre:");
-        int userNumber = scanNumber.nextInt();
+        String userNumber = scanNumber.nextLine();
 
-        //
+        //Convertiamo il nostro numero in un array
+        String[] numbers = userNumber.split("");
+        System.out.println(Arrays.toString(numbers));
 
-        for (int i = 0; i < 3; i++) {
-
-
+        //Usiamo un ciclo for
+        for (int i = 0; i < userNumber.length(); i++) {
+            somma = somma + Integer.parseInt(numbers[i]);
         }
+        System.out.println(somma);
     }
 }
