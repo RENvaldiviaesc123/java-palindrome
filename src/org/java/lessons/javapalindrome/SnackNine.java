@@ -4,7 +4,7 @@ package org.java.lessons.javapalindrome;
 public class SnackNine {
     public static void main(String[] args) {
     //Inizializziamo una variabile vuota per la somma
-        int somma=0 ;
+        double somma=0 ;
         double media ;
 
         //usiamo un ciclo for per calcolare la somma dei primi 10 numeri
