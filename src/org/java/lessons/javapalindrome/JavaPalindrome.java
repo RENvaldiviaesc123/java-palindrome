@@ -16,10 +16,6 @@ public class JavaPalindrome {
         String wordUser = scanWord.nextLine();
 
         //Verifichiamo se la parola dell'utente è o non è palindroma
-            //trasformiamo la parola in un array di char
-
-
-
             //Inizializzamo una variabile booleana
 
             boolean isPal = false;
